@@ -1,0 +1,43 @@
+.section__we-do {
+    padding-top: 0;
+}
+
+.we-do {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__img-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+
+        background: rgba(47, 48, 58, 0.8);
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-color);
+    }
+}
+
+// 0 - 767 -----------------------------------
+
+@media screen and (max-width: 1199px) {
+    .section.section__we-do {
+        display: none;
+    }
+}

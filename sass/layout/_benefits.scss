@@ -1,0 +1,89 @@
+.benefits {
+
+    &__wrap-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        margin-bottom: 30px;
+    
+        background-color: var(--our-team-bg-color);
+        border-radius: 4px;
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+    
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    
+    &__description {
+        color: var(--secondary-color);
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+// 0 - 767px --------------------------------------------
+
+@media screen and (max-width: 767px) {
+    .benefits {
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+    }
+}
+
+// 768рх+ -------------------------------
+
+@media screen and (min-width: 768px) {
+    .benefits {
+        &__list {
+            display: flex;
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            &__item {
+                width: calc((100% - 30px) / 2);
+            
+
+                &:nth-child(2n-1) {
+                    margin-right: 30px;
+                }
+
+                &:not(:nth-last-child(-n+2)) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+// 1200рх+ -------------------------------
+
+@media screen and (min-width: 1200px) {
+    .benefits {
+
+        &__item {
+            width: calc((100% - 90px) / 4);
+    
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
