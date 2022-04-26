@@ -23,7 +23,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 450px;
     max-height: 80%;
     padding: 40px;
     overflow: auto;
@@ -85,6 +84,7 @@
     &__checkbox-label {
         position: relative;
         display: flex;
+        justify-content: center;
         align-items: center;
         margin-bottom: 30px;
     }
@@ -175,7 +175,6 @@
         display: block;
         min-width: 16px;
         height: 15px;
-        margin-left: 12px;
 
         background-color: transparent;
         border: 2px solid var(--primary-color);
@@ -199,7 +198,8 @@
     }
 
     &__agree-text {
-        margin-left: 9px;
+        font-size: 12px;
+        margin-left: 7px;
         color: var(--secondary-color);
     }
 
@@ -207,6 +207,15 @@
         color: var(--accent-color);
     }
 }
+
+// 0 - 480рх-------------------------------------
+
+@media screen and (max-width: 480px) {
+    .modal {
+        max-width: 450px;
+    }
+}
+
 
 // 480рх+ -------------------------------------
 
@@ -220,6 +229,9 @@
     
 @media screen and (min-width: 1200px) {
     .modal {
-        width: 520px;
+        width: 528px;
+        &__agree-text {
+            font-size: 14px;
+        }
     }
 }
