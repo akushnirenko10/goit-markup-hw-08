@@ -113,14 +113,22 @@
     }
 }
 
-// 0 - 767px --------------------------------
+// 0 - 1199px --------------------------------
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .footer {
 
         &__container {
             text-align: center;
         }
+    }
+}
+
+
+// 0 - 767px --------------------------------
+
+@media screen and (max-width: 767px) {
+    .footer {
 
         &__social-inner {
             margin-bottom: 60px;
@@ -144,16 +152,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer {
+
         &__left-side {
             display: flex;
             justify-content: space-around;
             margin-bottom: 60px;
-        }
-
-        &__contacts,
-        &__social-inner,
-        &__subscribe {
-            text-align: center;
         }
 
         &__input {
