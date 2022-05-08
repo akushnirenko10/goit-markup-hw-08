@@ -284,8 +284,8 @@ img {
     height: 100vh;
     z-index: 2;
     background-color: var(--main-color);
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-1000%);
+            transform: translateY(-1000%);
     -webkit-transition: -webkit-transform var(--animation);
     transition: -webkit-transform var(--animation);
     transition: transform var(--animation);

@@ -9,7 +9,7 @@
 
         background-color: var(--main-color);
 
-        transform: translateY(-100%);
+        transform: translateY(-1000%);
         transition: transform var(--animation);
 
         &.is-open {
